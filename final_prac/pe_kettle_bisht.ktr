@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
     <name>pe_kettle_bisht</name>
@@ -111,7 +112,7 @@
   <hop> <from>Sort rows_categoryId</from><to>Merge Join</to><enabled>Y</enabled> </hop>
   <hop> <from>Merge Join</from><to>Select values</to><enabled>Y</enabled> </hop>
   <hop> <from>Select values</from><to>If field value is null category</to><enabled>Y</enabled> </hop>
-  <hop> <from>If field value is null category</from><to>Table output</to><enabled>Y</enabled> </hop>
+  <hop> <from>If field value is null category</from><to>Table output</to><enabled>N</enabled> </hop>
   </order>
   <step>
     <name>CSV file input 2 product category</name>
@@ -524,8 +525,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1220</xloc>
-      <yloc>118</yloc>
+      <xloc>1328</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
